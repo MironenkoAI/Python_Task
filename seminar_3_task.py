@@ -86,9 +86,18 @@ K. Необходимо сдвинуть всю последовательнот
 Input: [0, -1, 5, 2, 3]
 Output: 2 (-1 < 5, 2 < 3) """
 
+# решение 1:
+# n = [0, -1, 5, 2, 3]
+# count = 0
+# for i in range(1, len(n)):
+#     if n[i] > n[i - 1]:
+#         count += 1
+# print(count)
+
+# решение 2: аналогичное, только счет в др сторону
 n = [0, -1, 5, 2, 3]
 count = 0
-for i in range(1, len(n)):
-    if n[i] > n[i - 1]:
+for i in range(len(n) - 1):
+    if n[i] < n[i + 1]:
         count += 1
 print(count)
