@@ -16,8 +16,8 @@
 num_dec = int(input("введите число: "))
 res = ''
 DIVIDER = 2
-print(bin(num_dec))
-while num_dec > 0:
+print(bin(num_dec))   # готовая функция перевода в двоичную систему
+while num_dec > 0:    # код для перевода в двоичную систему
     res = str(num_dec % DIVIDER) + res
     num_dec //= DIVIDER
 print(res)
@@ -26,8 +26,8 @@ print(res)
 num_dec = int(input("введите число: "))
 res = ''
 DIVIDER = 8
-print(oct(num_dec))
-while num_dec > 0:
+print(oct(num_dec))   # готовая функция для перевода в восьмиричную систему
+while num_dec > 0:    # код для перевода в восьмиричную систему
     res = str(num_dec % DIVIDER) + res
     num_dec //= DIVIDER
 print(res)
