@@ -5,9 +5,9 @@
 """
 
 lst_1 = [5, "string", 0.15, True, None]
-for el in lst_1:   # перебор элементов массива
+for el in lst_1:   # перебор значений элементов массива
     print(type(el))
 
 lst_1 = [5, "string", 0.15, True, None]
-for i in range(len(lst_1)):  # перебор индексов массива
+for i in range(len(lst_1)):  # перебор индексов элементов массива
     print(type(lst_1[i]))

@@ -16,7 +16,7 @@
 from sys import getsizeof
 
 lst_1 = [5, 5, "string", 0.15, True, None]
-for i, el in enumerate(lst_1, 1):
+for i, el in enumerate(lst_1, 1):  # перебор индексов и значений, можно задать индекс с 1, а не с 0
     print(i, el, id(el), getsizeof(el), hash(el))
     if type(el) == int and el > 0:
         print("Целое положительное число")
