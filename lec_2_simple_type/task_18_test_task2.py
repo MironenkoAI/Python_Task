@@ -1,11 +1,6 @@
-x = input('Введите текст: ')
-
-if isinstance(x, int) == True:
-    b = bin(x)
-    o = oct(x)
-    h = hex(x)
-    print(b, o, h, sep='\n')
+x = 5
+print(type(x))
+if isinstance(x, int):
+    print(bin(x), oct(x), hex(x), sep='\n')
 else:
     print(str.isascii(x))
-
-    # НЕ РАБОТАЕТ!!!
