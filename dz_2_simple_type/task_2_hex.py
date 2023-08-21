@@ -10,11 +10,11 @@ else:
     x = int(x)
     print('Шестнадцатеричное число: ', hex(x))
 
-    hexadecimal_digits = '0123456789abcdef'
-    hexadecimal_number = ''
+    hex_digits = '0123456789abcdef'
+    hex_number = ''
     while x > 0:
         remainder = x % 16
-        hexadecimal_digit = hexadecimal_digits[remainder]
-        hexadecimal_number = hexadecimal_digit + hexadecimal_number
+        hex_digit = hex_digits[remainder]
+        hex_number = hex_digit + hex_number
         x //= 16
-    print("Шестнадцатеричное число:", hexadecimal_number)
+    print("Шестнадцатеричное число:", hex_number)
