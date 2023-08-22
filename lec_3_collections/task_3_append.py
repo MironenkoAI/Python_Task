@@ -3,7 +3,7 @@ b = 'Hello world'
 c = [1, 3, 5, 7]
 
 my_list = [None]
-my_list.append(a) # добавляет элемент в конец списка
+my_list.append(a) # добавляет все значение переменной целиком в конец списка
 print(my_list)
 my_list.append(b)
 print(my_list)
