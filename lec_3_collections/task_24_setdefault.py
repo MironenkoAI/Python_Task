@@ -10,5 +10,5 @@ print(f'{eggs = }\t{my_dict = }')
 new_spam = my_dict.setdefault('two') # выдаст значение по найденному ключу
 print(f'{new_spam = }\t{my_dict = }')
 
-new_eggs = my_dict.setdefault('one', 1_000) # выдаст значение по найденному ключу, 1_000 добавится если ключ не найден
-print(f'{new_eggs = }\t{my_dict = }')
+new_eggs = my_dict.setdefault('one', 1_000) # выдаст значение по найденному ключу, 
+print(f'{new_eggs = }\t{my_dict = }')       # 1_000 добавится если ключ не найден
