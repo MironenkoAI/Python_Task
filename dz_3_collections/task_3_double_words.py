@@ -25,4 +25,5 @@ text = 'Ко́шка (лат. Felis catus) — домашнее животное
 new_text = re.sub(r'[^\w\s]','', text).lower().split()
 unique_words = len(set(new_text))
 print(f'В тексте встречается {unique_words} уникальных слов(а)')
-print(sorted(set(new_text), key=lambda x: new_text.count(x))[-10:])
+lider_ten = sorted(set(new_text), key=lambda x: new_text.count(x))[-10:]
+print(f'Самые частые слова: {lider_ten}')
