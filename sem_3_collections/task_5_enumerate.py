@@ -13,3 +13,6 @@ for i in range(len(lst)):
     if lst[i] % 2 == 1:
         lst_numbers.append(i + 1)
 print(lst_numbers)
+#---------------
+new_list = [i for i, el in enumerate(lst, 1) if el % 2 == 1]
+print(new_list)
