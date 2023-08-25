@@ -11,7 +11,7 @@
 texts = "vsdsdsdsdsds dfsfdf fdfdfd fdfdfd".split()
 shift = len(max(texts))
 for n, el in enumerate(sorted(texts), 1):
-    print(f"{n}, {el:>{shift}}")
+    print(f"{n} {el:>{shift}}")
 
 
 
