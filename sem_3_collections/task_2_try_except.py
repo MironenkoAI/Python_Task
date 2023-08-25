@@ -12,7 +12,7 @@
 
 lst = [1, 2.1, True, -5, "Sds"]
 for el in lst:
-    try:
+    try:  # лучше чем if_else, для поиска исключений
         print(int(el))
         print(float(el))
     except ValueError:
