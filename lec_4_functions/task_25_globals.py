@@ -19,3 +19,7 @@ x = 42
 glob_dict = globals()
 glob_dict['x'] = 73
 print(f'{x = }')
+
+# вывести переменные без дандер методов (которые начинаются на __)
+data = [25, -42, 146, 73, -100, 12]
+print(*filter(lambda x: not x[0].startswith('__'), globals().items()))
