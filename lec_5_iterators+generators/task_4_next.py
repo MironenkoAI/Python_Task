@@ -18,3 +18,11 @@ print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
+
+data = {"один": 1, "два": 2, "три": 3}
+x = iter(data.items())
+print(x) # вернет <dict_itemiterator object at 0x00000284CC1909A0>
+y = next(x)
+print(y) # вернет ('один', 1)
+z = next(iter(y))
+print(z) # вернет один
