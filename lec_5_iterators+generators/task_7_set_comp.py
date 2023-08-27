@@ -1,3 +1,4 @@
+# Set comprehensions - генерация множеств
 my_setcomp = {chr(i) for i in range(97, 123)}
 print(my_setcomp) # {'f', 'g', 'b', 'j', 'e',... }
 for char in my_setcomp:
