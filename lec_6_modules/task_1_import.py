@@ -1,4 +1,5 @@
-import sys, random
+import sys
+import random
 
 print(sys)
 print(sys.builtin_module_names)
