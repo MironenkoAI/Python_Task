@@ -1,6 +1,9 @@
 def check_date(date):
     day, month, year = map(int, date.split('.'))
-    res = leap_year(year)
+    if year in range(1, 10000) and month in range(1, 13) and day in range(1, 32):
+        res = leap_year(year)
+    else:
+        return False
 
     if res is True:
         if month == 2:
