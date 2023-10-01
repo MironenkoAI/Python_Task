@@ -21,7 +21,9 @@ my_dict = {
 print(f'{type(my_dict) = }\n{my_dict = }')
 with open('new_user.json', 'w') as f:
     json.dump(my_dict, f)
+    # преобразует dict или list (Python) в новый json-файл 
+    # некоторые символы и рус.яз. будут закодированы, но верны при обратном преобразовании
 
-# или 
+# или использовать дополнительно ensure_ascii
 with open('new_user.json', 'w', encoding='utf-8') as f:
     json.dump(my_dict, f, ensure_ascii=False) # чтобы русский отображался корректно

@@ -1,5 +1,6 @@
 import json
 
+# дана строка (текст)
 json_text = """
 [
     {
@@ -28,6 +29,7 @@ json_text = """
     }
 ]"""
 
-print(f'{type(json_text) = }\n{json_text = }')
+print(f'{type(json_text) = }\n{json_text = }') # тип строка
 json_list = json.loads(json_text)
-print(f'{type(json_list) = }\t{len(json_list) = }\n{json_list = }')
+# преобразует json из строки в dict или list (Python)
+print(f'{type(json_list) = }\t{len(json_list) = }\n{json_list = }') # тип список
