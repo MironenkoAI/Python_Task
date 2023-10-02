@@ -1,0 +1,6 @@
+name,path,type,size
+.,.,directory,2918
+csv_file_.csv,.,file,145
+json_file_.json,.,file,339
+pickle_file_.pickle,.,file,215
+task_1.py,.,file,2219
