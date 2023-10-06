@@ -19,3 +19,5 @@ def test_check_triangle_invalid():
 
 if __name__ == '__main__':
     pytest.main(['-v'])
+
+# В терминале: pytest
